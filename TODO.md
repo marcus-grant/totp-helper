@@ -5,9 +5,6 @@ To Dos
 In-Progress
 -----------
 
-- [ ] Check if input is valid file path
-- [ ] Check if file path is a gpg encrypted file
-- [ ] Decrypt (using shell gpg for now)
 - [ ] Warn of missing gpg command if not there and needed then exit
 - [ ] If not a valid file path, then assume its an otpauth uri string or a base32 secret key string
 - [ ] Check whether input is a valid `otpauth` file as specified by [Google's Spec][01]
@@ -28,6 +25,7 @@ Planning
     - [ ] Basic Usage Section
     - [ ] Install Section
     - [ ] Dependencies Section
+- [ ] Handle stdin when popup hooks aren't helping input for `gpg --decrypt`
 
 
 Considering
@@ -44,6 +42,9 @@ Considering
 Completed
 ---------
 
+- [x] Check if file path is a gpg encrypted file
+- [x] Decrypt (using shell gpg for now)
+- [x] Check if input is valid file path
 - [x] Initial README
 
 
